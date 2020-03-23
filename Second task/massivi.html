@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<title>Массивы
+</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var array = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]];
+var array2 = [];
+for (var i=0; i<array.length; i++) {
+	for (var j=0; j<array[i].length; j++) {
+	var k = i;
+	array2[k] = array[i];
+	k++;
+	}
+}
+
+//document.write(array2+'<br>');
+
+var array3 = array2.filter(function () { return true });
+
+function comp(arr) {
+    var comped = [];
+    var min = Infinity;
+    var minIndex = Infinity;
+    for (j = 0; j < arr.length; j++) {
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < min ) {
+                min = arr[i];
+                minIndex = i;
+            }
+        }
+        arr[minIndex] = Infinity;
+        comped.push(min);
+        min = Infinity;
+    }
+    return comped;
+}
+
+document.write(array3.map(comp));
+</script>
+</body>
+</html>

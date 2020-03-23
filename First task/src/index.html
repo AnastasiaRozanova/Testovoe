@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link href="asset/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <script src="data.json"></script> -->
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="row">
+                <div>
+                    <img src="asset/img/foto.png">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <img src="asset/img/lg.png">
+                </div>
+
+                <div>
+                    <span>Список заявок</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></></i>
+                </div>
+
+                <div>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="wrapper">
+            <div class="row">
+                <p class="mr-10">Стандартный</p>&nbsp;
+                <i class="fa fa-angle-down mr-10" aria-hidden="true"></i>&nbsp;
+                <form name="search">
+                    <div class="add-on">
+                        <input type="text" placeholder="Поиск" name="searchString" class="form-input">
+                        <i id="search_btn" class="fa fa-search" aria-hidden="true"></i></p>
+                    </div>
+                </form>        
+                <i class="fa fa-external-link right" aria-hidden="true"></i>
+            </div>
+
+            <form name="filter" class="row filter">
+                <div class="filter-item">
+                    <label>№ Заявки</label>
+                    <div class="add-on">
+                        <input name="number" type="text" class="form-input">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <label>Приоритет:</label>
+                    <select name="priority" class="form-input">
+                        <option value="">Select option</option>
+                        <option value="Высокий">Высокий</option>
+                        <option value="Средний">Средний</option>
+                        <option value="Низкий">Низкий</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label>Статус:</label>
+                    <select name="status" class="form-input">
+                        <option value="">Select option</option>
+                        <option value="Новая">Новая</option>
+                        <option value="В работе">В работе</option>
+                        <option value="Обработана">Обработана</option>
+                        <option value="Возвращена">Возвращена</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label>Дата создания:</label>
+                    <div class="add-on">
+                        <input name="create" type="text" class="form-input" />
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <label>Дата завершения:</label>
+                    <div class="add-on">
+                        <input name="finish" type="text" class="form-input" />
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="filter-item right">
+                    <span>Адапт. фильтры</span>&nbsp;
+                    <button type="button" id="filter_btn">Применить</button>&nbsp;
+                    <i class="fa fa-fire-extinguisher" aria-hidden="true"></i>&nbsp;
+                </div>
+            </form>
+        </div>
+    </aside>
+
+    <main>
+        <div class="wrapper">
+            <div class="row">
+                <span class="mr-10">Список заявок(123)</span>
+                <span class="mr-10">Стандартный *</span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="right mr-10">
+                    <i class="fa fa-chain-broken" aria-hidden="true"></i>&nbsp;
+                    <i class="fa fa-cog" aria-hidden="true"></i>&nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>№ Заявки</th>
+                            <th>Приоритет</th>
+                            <th>Статус</th>
+                            <th>№ CS</th>
+                            <th>Дата и время создания</th>
+                            <th>Дата и время время изменения</th>
+                            <th>Дата и время время завершения</th>
+                            <th>Инициатор</th>
+                            <th>Обработчик</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

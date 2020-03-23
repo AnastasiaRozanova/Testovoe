@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header, aside, main {
+	width: 100%;
+}
+header {
+	background: #94c0e5;
+}
+aside {
+
+	background: #d3e9ff;
+	padding-bottom: 15px;
+}
+.wrapper {
+	width: 1400px;
+	margin: 0 auto;
+}
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 20px;
+}
+header .row {
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 0;
+}
+header .row div {
+	display: flex;
+	align-items: center;
+}
+header .row div i {
+	margin: 0 8px;
+	font-size: 20px;
+}
+.add-on input {
+	padding-right: 20px;
+}
+.add-on i {
+	margin-left: -20px;
+}
+.right {
+	margin-left: auto;
+}
+.filter-item {
+	margin-right: 15px;
+	padding-top: 20px;
+}
+.filter-item:last-child {
+	margin-right: 0;
+}
+.filter-item label {
+	display: block;
+	margin-top: -20px;
+}
+.form-input {
+	width: 180px;
+	height: 26px;
+	box-sizing: border-box;
+}
+label {
+	padding-bottom: 10px;
+}
+.mr-10 {
+	margin-right: 10px;
+}
+table {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+}
+tr {
+	border: 1px solid #e5e5e5;
+}
+tr:first-child {
+	background: #f7f7f7;
+}
+th {
+	text-align: left;
+}
+button {
+	width: 120px;
+	height: 26px;
+	background: #5496cd;
+	border: 1px solid #4083bc;
+}
+i {
+	color: #4083bc;
+	font-size: 150%;
+}
+td i {
+	color: #b3b3b3;
+}
